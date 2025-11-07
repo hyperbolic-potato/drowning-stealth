@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5449568367343877225}
   - component: {fileID: 7482570954364434034}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: genericNoise
   m_TagString: Noise
   m_Icon: {fileID: 0}

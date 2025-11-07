@@ -29,9 +29,23 @@ public class Alertness : MonoBehaviour
         if (alertLevel < -1 || alertLevel > 2) Debug.LogError("invalid alert level");
     }
 
-    public void SetAlertLevel(int level)
+    public void TriggerInvestigation(Vector2 newTarget)
     {
-        alertLevel = level;
-        attentionSpan = attentionSpanMax;
+        if (alertLevel < 2 && alertLevel > -1)
+        {
+            alertLevel = 1;
+        target = newTarget;
+            attentionSpan = attentionSpanMax;
+        }
+        
+    }
+
+    public void TriggerChase()
+    {
+        if (alertLevel > -1)
+        {
+            alertLevel = 2;
+            attentionSpan = attentionSpanMax;
+        }
     }
 }
