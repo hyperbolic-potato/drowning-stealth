@@ -6,7 +6,7 @@ public class Alertness : MonoBehaviour
 
     public Vector2 target;
 
-    public float attentionSpan;
+    float attentionSpan;
     public float attentionSpanMax = 5;
 
     public Transform player;

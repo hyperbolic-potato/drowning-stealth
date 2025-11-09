@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Noise : MonoBehaviour
 {
-    public CircleCollider2D col;
+    CircleCollider2D col;
 
     public float radius = 0f;
     public float duration = 0f;

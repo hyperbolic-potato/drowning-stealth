@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 
@@ -7,9 +8,14 @@ public class EyesightDetector : MonoBehaviour
 
     public LayerMask lm;
 
-    public Vector2 orientation = Vector2.up;
+    Vector2 orientation = Vector2.up;
 
-    public Alertness alertness;
+    Alertness alertness;
+
+    public float angle;
+    public int count;
+    public float distance;
+    public bool debug;
 
     private void Start()
     {
@@ -18,7 +24,7 @@ public class EyesightDetector : MonoBehaviour
 
     private void Update()
     {
-        RaycastHit2D check = RaycastScan(45f, 5, 2f, true);
+        RaycastHit2D check = RaycastScan(angle, count, distance, debug);
         if (check)
         {
             alertness.TriggerChase();
@@ -33,10 +39,10 @@ public class EyesightDetector : MonoBehaviour
         for (int i = 0; i < count; i++)
         {
             Quaternion currentAngle = Quaternion.AngleAxis(
-                (-angle / 2) + 
-                (angle / (float)count * i) +
-                Random.Range(0f, angle / (float)count),
-                Vector3.forward);
+                (-angle / 2) +                              //chop the angle down the middle
+                (angle / (float)count * i) +                //add sub-angle proportinal to index in the array
+                Random.Range(0f, angle / (float)count),     //give it some chaos game
+                Vector3.forward);                           //rotate around the z axis
 
             Vector2 direction = (currentAngle * orientation);
             rays[i] = new Ray2D(transform.position, direction);
