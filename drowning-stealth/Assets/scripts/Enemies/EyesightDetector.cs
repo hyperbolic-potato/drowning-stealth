@@ -1,5 +1,6 @@
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.AI;
 
 
 public class EyesightDetector : MonoBehaviour
@@ -11,6 +12,7 @@ public class EyesightDetector : MonoBehaviour
     Vector2 orientation = Vector2.up;
 
     Alertness alertness;
+    NavMeshAgent nma;
 
     public float angle;
     public int count;
@@ -19,7 +21,8 @@ public class EyesightDetector : MonoBehaviour
 
     private void Start()
     {
-        alertness = transform.GetComponentInParent<Alertness>();
+        alertness = GetComponent<Alertness>();
+        nma = GetComponent<NavMeshAgent>();
     }
 
     private void Update()
@@ -30,7 +33,9 @@ public class EyesightDetector : MonoBehaviour
             alertness.TriggerChase();
         }
 
-        orientation = transform.localToWorldMatrix * Vector2.up;
+        //orientation = transform.localToWorldMatrix * Vector2.up;
+        orientation = (orientation + new Vector2(nma.velocity.x, nma.velocity.y)).normalized;
+        //Debug.Log(orientation);
 
     }
     private RaycastHit2D RaycastScan(float angle, int count, float dist, bool debug)
