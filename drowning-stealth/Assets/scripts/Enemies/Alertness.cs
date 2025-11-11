@@ -11,6 +11,11 @@ public class Alertness : MonoBehaviour
 
     public Transform player;
     // 0 for idle, 1 for investigating, 2 for chasing, -1 for stunned
+
+    private void Start()
+    {
+        player = GameObject.FindWithTag("Player").transform;
+    }
     private void Update()
     {
         if (attentionSpan > 0)

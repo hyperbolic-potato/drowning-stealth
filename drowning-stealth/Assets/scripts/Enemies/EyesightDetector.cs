@@ -9,7 +9,7 @@ public class EyesightDetector : MonoBehaviour
 
     public LayerMask lm;
 
-    Vector2 orientation = Vector2.up;
+    public Vector2 orientation = Vector2.up;
 
     Alertness alertness;
     NavMeshAgent nma;
@@ -18,6 +18,7 @@ public class EyesightDetector : MonoBehaviour
     public int count;
     public float distance;
     public bool debug;
+    //public float swingFactor = 1f; 
 
     private void Start()
     {

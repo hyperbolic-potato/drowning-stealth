@@ -9,12 +9,17 @@ public class Noise : MonoBehaviour
     public float duration = 0f;
     public bool timed = true;
 
-    void Start()
+    protected void Start()
     {
         col = GetComponent<CircleCollider2D>();
         col.radius = radius;
 
         if (timed) StartCoroutine(TimedSelfDestruct());
+    }
+
+    protected void Update()
+    {
+        col.radius = radius;
     }
 
     IEnumerator TimedSelfDestruct()

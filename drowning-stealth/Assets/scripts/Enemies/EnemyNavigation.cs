@@ -51,14 +51,14 @@ public class EnemyNavigation : MonoBehaviour
                 break;
             case 1:
                 patrolling = false;
-                StopCoroutine(co);
+                if(co != null) StopCoroutine(co);
                 agent.SetDestination(alertness.target);
                 agent.stoppingDistance = 0.32f;
                 agent.speed = patrolSpeed;
                 break;
             case 2:
                 patrolling = false;
-                StopCoroutine(co);
+                if (co != null) StopCoroutine(co);
                 agent.SetDestination(alertness.target);
                 agent.stoppingDistance = 0f;
                 agent.speed = chaseSpeed;
@@ -66,7 +66,7 @@ public class EnemyNavigation : MonoBehaviour
             
             default:
                 patrolling = false;
-                StopCoroutine(co);
+                if (co != null) StopCoroutine(co);
                 agent.SetDestination(transform.position);
                 agent.stoppingDistance = 0;
                 break;
