@@ -6,6 +6,8 @@ public class PlayerMovement : MonoBehaviour
 
     public Rigidbody2D rb;
 
+    public Animator anim;
+
     public Vector2 moveInput;
 
     public float moveSpeed = 3f;
@@ -24,9 +26,13 @@ public class PlayerMovement : MonoBehaviour
 
     public float noise;
 
+    public int nesw = 0;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+
+        anim = GetComponent<Animator>();
     }
 
     void Update()
@@ -57,9 +63,23 @@ public class PlayerMovement : MonoBehaviour
         {
             noise = idleNoise;
         }
+
+
+
+        Debug.Log(move);
+        if (move.x < 0)         nesw = 4;
+        else if (move.x > 0)    nesw = 2;
+        else if (move.y > 0)    nesw = 1;
+        else if (move.y < 0)    nesw = 3;
+        else                    nesw = 0;
+
+
+
             rb.linearVelocity = move;
 
-
+        anim.SetBool("isCrouching", isCrawling);
+        anim.SetBool("isSprinting", isSprinting);
+        anim.SetInteger("NESW", nesw);
 
     }
 
