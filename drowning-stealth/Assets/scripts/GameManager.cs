@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -29,7 +30,19 @@ public class GameManager : MonoBehaviour
     {
         if (pauseMenu != null)
         {
+            paused = false;
             Time.timeScale = 1f;
+            pauseMenu.SetActive(false);
         }
+    }
+
+    public void Restart()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    public void ReturnToMenu()
+    {
+        SceneManager.LoadScene(0);
     }
 }

@@ -66,7 +66,6 @@ public class PlayerMovement : MonoBehaviour
 
 
 
-        Debug.Log(move);
         if (move.x < 0)         nesw = 4;
         else if (move.x > 0)    nesw = 2;
         else if (move.y > 0)    nesw = 1;
