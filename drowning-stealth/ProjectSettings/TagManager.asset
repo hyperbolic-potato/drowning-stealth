@@ -7,6 +7,7 @@ TagManager:
   - Environment
   - Noise
   - Enemy
+  - PauseMenu
   layers:
   - Default
   - TransparentFX
