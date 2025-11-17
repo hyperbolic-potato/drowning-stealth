@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
@@ -6,9 +7,18 @@ public class GameManager : MonoBehaviour
     public GameObject pauseMenu;
     public bool paused = false;
 
+    public InputActionAsset inp;
+
     private void Start()
     {
         pauseMenu = GameObject.FindGameObjectWithTag("PauseMenu");
+        if(pauseMenu != null) pauseMenu.SetActive(false);
+        if (inp == null) Debug.LogError("GameManager is missing her input scheme :( make sure she has one in the editor");
+    }
+
+    private void Update()
+    {
+        if (inp != null && inp["Escape"].WasPerformedThisFrame()) Pause();
     }
 
     public void Pause()
@@ -38,11 +48,22 @@ public class GameManager : MonoBehaviour
 
     public void Restart()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        LoadLevel(SceneManager.GetActiveScene().buildIndex);
     }
 
     public void ReturnToMenu()
     {
-        SceneManager.LoadScene(0);
+        LoadLevel(0);
+    }
+
+    public void LoadLevel(int index)
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(index);
+    }
+
+    public void Quit()
+    {
+        Application.Quit();
     }
 }

@@ -85,6 +85,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "Escape",
+                    "type": "Button",
+                    "id": "20374d03-fbdc-48f3-825e-f4267bb4912d",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -483,6 +492,17 @@
                     "action": "Crouch",
                     "isComposite": false,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2b22ca2f-b89f-4aa3-93bd-ec8c795620cf",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Escape",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         },
@@ -512,7 +532,7 @@
                     "name": "Cancel",
                     "type": "Button",
                     "id": "15cef263-9014-4fd5-94d9-4e4a6234a6ef",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -581,9 +601,9 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Escape",
+                    "name": "EscapeUI",
                     "type": "Button",
-                    "id": "08eb06d6-6948-4c9a-bbd0-4dfe962d9e15",
+                    "id": "9bc3832c-76c5-470b-9ca1-7302114aa488",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -1011,12 +1031,12 @@
                 },
                 {
                     "name": "",
-                    "id": "aa665f8b-ebbb-482a-9d2b-bbb83c101110",
+                    "id": "64ad3936-768b-4e3a-b624-ff4574ba91fd",
                     "path": "<Keyboard>/escape",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Escape",
+                    "action": "EscapeUI",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
