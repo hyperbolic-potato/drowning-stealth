@@ -70,12 +70,14 @@ public class PlayerMovement : MonoBehaviour
         else if (move.x > 0)    nesw = 2;
         else if (move.y > 0)    nesw = 1;
         else if (move.y < 0)    nesw = 3;
-        else                    nesw = 0;
+        //else                    nesw = 0;
 
 
 
             rb.linearVelocity = move;
 
+
+        anim.SetBool("isMoving", isMoving);
         anim.SetBool("isCrouching", isCrawling);
         anim.SetBool("isSprinting", isSprinting);
         anim.SetInteger("NESW", nesw);

@@ -7,13 +7,15 @@ public class Inventory : MonoBehaviour
     public int selectedItem;
     public GameObject interactable;
 
+    
+
     private void Start()
     {
         pockets = new GameObject[5];
     }
     public void Pickup()
     {
-        if (interactable != null)
+        if (interactable != null && pockets[selectedItem] == null)
         {
             pockets[selectedItem] = interactable;
             interactable.transform.parent = transform;

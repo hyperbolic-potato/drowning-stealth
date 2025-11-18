@@ -243,7 +243,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lm:
     serializedVersion: 2
-    m_Bits: 51
+    m_Bits: 59
   orientation: {x: 0, y: -1}
   angle: 45
   count: 5
