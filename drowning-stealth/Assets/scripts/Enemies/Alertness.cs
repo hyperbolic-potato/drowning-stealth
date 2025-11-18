@@ -9,6 +9,8 @@ public class Alertness : MonoBehaviour
     float attentionSpan;
     public float attentionSpanMax = 5;
 
+    public float stunTimer = 5;
+
     public Transform player;
     // 0 for idle, 1 for investigating, 2 for chasing, -1 for stunned
 
@@ -52,5 +54,10 @@ public class Alertness : MonoBehaviour
             alertLevel = 2;
             attentionSpan = attentionSpanMax;
         }
+    }
+
+    public void TriggerStun()
+    {
+        alertLevel = -1;
     }
 }
