@@ -9,6 +9,7 @@ TagManager:
   - Enemy
   - PauseMenu
   - Item
+  - Checkpoint
   layers:
   - Default
   - TransparentFX
