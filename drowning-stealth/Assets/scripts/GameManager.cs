@@ -72,4 +72,9 @@ public class GameManager : MonoBehaviour
         Application.Quit();
     }
 
+    public void LoadNextLevel()
+    {
+        LoadLevel(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
 }
