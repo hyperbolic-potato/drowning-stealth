@@ -178,7 +178,7 @@ MonoBehaviour:
     m_Bits: 0
   throwable:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 72
   manager: {fileID: 0}
 --- !u!82 &92101242736015651
 AudioSource:
