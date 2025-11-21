@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 1541824450020195686}
   - component: {fileID: 2487125815683356966}
   - component: {fileID: 4257683460600808069}
+  - component: {fileID: 6205286669568585529}
   m_Layer: 2
   m_Name: GuardEnemy
   m_TagString: Enemy
@@ -106,7 +107,7 @@ NavMeshAgent:
   m_AgentTypeID: -1372625422
   m_Radius: 0.5
   m_Speed: 3.5
-  m_Acceleration: 8
+  m_Acceleration: 16
   avoidancePriority: 50
   m_AngularSpeed: 30
   m_StoppingDistance: 0
@@ -145,6 +146,7 @@ MonoBehaviour:
   alertLevel: 0
   target: {x: 0, y: 0}
   attentionSpanMax: 5
+  stunTimer: 5
   player: {fileID: 0}
 --- !u!50 &425543939562346775
 Rigidbody2D:
@@ -249,6 +251,22 @@ MonoBehaviour:
   count: 5
   distance: 4
   debug: 1
+--- !u!114 &6205286669568585529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2302107832264499211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 0
+  m_Area: 0
+  m_IgnoreFromBuild: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &7976061684941952900
 GameObject:
   m_ObjectHideFlags: 0
@@ -284,7 +302,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 9.14, y: -1.17}
+  m_AnchoredPosition: {x: 0.027, y: 0.92}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!23 &1923110611158434200
@@ -417,7 +435,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 18.262173, w: 4.2207785}
+  m_margin: {x: 9.299362, y: 2.1201591, z: 9.377792, w: 2.0463276}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0

@@ -19,16 +19,21 @@ public class Throwable : Item
     public LayerMask interactable;
     public LayerMask throwable;
 
+    public GameObject manager;
+
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         col = GetComponent<Collider2D>();
         sfx = GetComponent<AudioSource>();
+        manager = GameObject.FindWithTag("GameController");
     }
 
     public override bool Usage()
     {
         gameObject.SetActive(true);
+
+        
 
         sfx.clip = sfxList[0];
         sfx.Play();
@@ -40,7 +45,8 @@ public class Throwable : Item
         col.excludeLayers = throwable;
 
         Vector2 temp = transform.parent.position;
-        transform.parent = null;
+        transform.parent = manager.transform;
+        transform.parent = null; //this pair of lines makes sure that throwable will be destroyed on scene load
         transform.position = temp;
 
         Vector2 target = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
@@ -53,6 +59,8 @@ public class Throwable : Item
 
         return true;
     }
+
+
 
     private void OnCollisionEnter2D(Collision2D collision)
     {

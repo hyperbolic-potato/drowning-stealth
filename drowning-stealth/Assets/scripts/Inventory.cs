@@ -6,12 +6,13 @@ public class Inventory : MonoBehaviour
     public GameObject[] pockets;
     public int selectedItem;
     public GameObject interactable;
+    public int capacity = 5;
 
     
 
     private void Start()
     {
-        pockets = new GameObject[5];
+        pockets = new GameObject[capacity];
     }
     public void Pickup()
     {
@@ -42,6 +43,11 @@ public class Inventory : MonoBehaviour
             }
         }
         
+    }
+
+    public void Clear()
+    {
+        pockets = new GameObject[capacity];
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
