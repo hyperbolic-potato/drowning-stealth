@@ -10,6 +10,7 @@ TagManager:
   - PauseMenu
   - Item
   - Checkpoint
+  - Sinkhole
   layers:
   - Default
   - TransparentFX
