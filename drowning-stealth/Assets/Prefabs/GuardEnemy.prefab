@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 2487125815683356966}
   - component: {fileID: 4257683460600808069}
   - component: {fileID: 6205286669568585529}
+  - component: {fileID: 2112896402801361506}
   m_Layer: 2
   m_Name: GuardEnemy
   m_TagString: Enemy
@@ -225,9 +226,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   alertness: {fileID: 335832616493764857}
   agent: {fileID: 7350273107890762555}
-  patrolPoints:
-  - {fileID: 0}
-  - {fileID: 0}
+  patrolPoints: []
   patrolInterval: 0.5
   patrolSpeed: 1.5
   chaseSpeed: 6
@@ -267,6 +266,28 @@ MonoBehaviour:
   m_Area: 0
   m_IgnoreFromBuild: 1
   m_AffectedAgents: ffffffff
+--- !u!95 &2112896402801361506
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2302107832264499211}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &7976061684941952900
 GameObject:
   m_ObjectHideFlags: 0
