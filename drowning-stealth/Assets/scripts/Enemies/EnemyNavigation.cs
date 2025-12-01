@@ -6,9 +6,11 @@ using System.Collections;
 public class EnemyNavigation : MonoBehaviour
 {
 
-    public Alertness alertness;
+    Alertness alertness;
 
-    public NavMeshAgent agent;
+    NavMeshAgent agent;
+
+    EyesightDetector eye;
 
     public Transform[] patrolPoints;
     public float patrolInterval;
@@ -18,12 +20,18 @@ public class EnemyNavigation : MonoBehaviour
     public float patrolSpeed = 1.0f;
     public float chaseSpeed = 3.5f;
 
+    int nesw = 0;
+
     public Coroutine co;
+
+    Animator anim;
 
     private void Start()
     {
         agent = GetComponent<NavMeshAgent>();
         alertness = GetComponent<Alertness>();
+        anim = GetComponent<Animator>();
+        eye = GetComponent<EyesightDetector>();
         agent.updateRotation = false;
         agent.updateUpAxis = false;
 
@@ -72,6 +80,14 @@ public class EnemyNavigation : MonoBehaviour
                 break;
 
         }
+        
+        if (eye.orientation.x < 0) nesw = 4;
+        else if (eye.orientation.x > 0) nesw = 2;
+        else if (eye.orientation.y > 0) nesw = 1;
+        else if (eye.orientation.y < 0) nesw = 3;
+
+        anim.SetBool("isAlert", alertness.alertLevel > 1);
+        anim.SetInteger("NESW", nesw);
 
         
     }
