@@ -1477,7 +1477,7 @@ MonoBehaviour:
   pauseMenu: {fileID: 0}
   paused: 0
   inp: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
-  indicator: {fileID: 0}
+  indicator: {fileID: 6901591859231089413}
   inv: {fileID: 0}
   slot1: {fileID: 1223800235069715373}
   slot2: {fileID: 8477183543988740346}
