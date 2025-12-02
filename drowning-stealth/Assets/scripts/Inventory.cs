@@ -1,5 +1,6 @@
 using System.Linq;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Inventory : MonoBehaviour
 {
@@ -25,6 +26,16 @@ public class Inventory : MonoBehaviour
             interactable = null;
         }
             
+    }
+
+    public void Swap(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            selectedItem++;
+            selectedItem %= capacity;
+        }
+        
     }
 
     public void Use()

@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -9,14 +10,21 @@ public class GameManager : MonoBehaviour
 
     public InputActionAsset inp;
 
+    public RectTransform indicator;
+    public Inventory inv;
 
+    public Image slot1;
+    public Image slot2;
 
+    public Sprite defaultIcon;
 
     private void Start()
     {
         pauseMenu = GameObject.FindGameObjectWithTag("PauseMenu");
+        inv = GameObject.FindWithTag("Player").GetComponent<Inventory>();
         if(pauseMenu != null) pauseMenu.SetActive(false);
         if (inp == null) Debug.LogError("GameManager is missing her input scheme :( make sure she has one in the editor");
+        
 
         
     }
@@ -24,6 +32,12 @@ public class GameManager : MonoBehaviour
     private void Update()
     {
         if (inp != null && inp["Escape"].WasPerformedThisFrame()) Pause();
+        if (inv != null)
+        {
+            if (inv.pockets[0] != null) slot1.sprite = inv.pockets[0].GetComponent<SpriteRenderer>().sprite;
+            if (inv.pockets[1] != null) slot2.sprite = inv.pockets[1].GetComponent<SpriteRenderer>().sprite;
+            
+        }
     }
 
     public void Pause()
