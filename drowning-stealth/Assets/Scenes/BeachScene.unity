@@ -47568,6 +47568,10 @@ PrefabInstance:
       value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 2487125815683356966, guid: da3ce04462d9bb748a93098b70891536, type: 3}
+      propertyPath: patrolPoints.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2487125815683356966, guid: da3ce04462d9bb748a93098b70891536, type: 3}
       propertyPath: 'patrolPoints.Array.data[0]'
       value: 
       objectReference: {fileID: 2058453472}
@@ -48147,7 +48151,7 @@ MonoBehaviour:
   m_BuildHeightMesh: 0
   m_MinRegionArea: 0
   m_HideEditorLogs: 0
-  m_NavMeshData: {fileID: 23800000, guid: 709711e80b78dae469b08c1c353344d4, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: bc36e86890260b944a8f653b4dd0cfda, type: 2}
 --- !u!4 &1821780075
 Transform:
   m_ObjectHideFlags: 0
@@ -63977,13 +63981,17 @@ PrefabInstance:
       value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 2487125815683356966, guid: da3ce04462d9bb748a93098b70891536, type: 3}
+      propertyPath: patrolPoints.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2487125815683356966, guid: da3ce04462d9bb748a93098b70891536, type: 3}
       propertyPath: 'patrolPoints.Array.data[0]'
       value: 
-      objectReference: {fileID: 1394458672}
+      objectReference: {fileID: 1331916890}
     - target: {fileID: 2487125815683356966, guid: da3ce04462d9bb748a93098b70891536, type: 3}
       propertyPath: 'patrolPoints.Array.data[1]'
       value: 
-      objectReference: {fileID: 1331916890}
+      objectReference: {fileID: 1394458672}
     - target: {fileID: 4257683460600808069, guid: da3ce04462d9bb748a93098b70891536, type: 3}
       propertyPath: orientation.y
       value: 1

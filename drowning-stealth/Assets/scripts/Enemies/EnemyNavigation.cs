@@ -81,10 +81,10 @@ public class EnemyNavigation : MonoBehaviour
 
         }
         
-        if (eye.orientation.x < 0) nesw = 4;
-        else if (eye.orientation.x > 0) nesw = 2;
-        else if (eye.orientation.y > 0) nesw = 1;
-        else if (eye.orientation.y < 0) nesw = 3;
+        if (eye.orientation.x < 0 && Mathf.Abs(eye.orientation.x) > Mathf.Abs(eye.orientation.y)) nesw = 4;
+        else if (eye.orientation.x > 0 && Mathf.Abs(eye.orientation.x) > Mathf.Abs(eye.orientation.y)) nesw = 2;
+        else if (eye.orientation.y > 0 && Mathf.Abs(eye.orientation.y) > Mathf.Abs(eye.orientation.x)) nesw = 1;
+        else if (eye.orientation.y < 0 && Mathf.Abs(eye.orientation.y) > Mathf.Abs(eye.orientation.x)) nesw = 3;
 
         anim.SetBool("isAlert", alertness.alertLevel > 1);
         anim.SetInteger("NESW", nesw);
