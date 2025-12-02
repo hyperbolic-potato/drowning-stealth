@@ -709,9 +709,6 @@ AnimatorStateTransition:
   - m_ConditionMode: 2
     m_ConditionEvent: isCrouching
     m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: isSprinting
-    m_EventTreshold: 0
   - m_ConditionMode: 6
     m_ConditionEvent: NESW
     m_EventTreshold: 3
@@ -1005,9 +1002,6 @@ AnimatorStateTransition:
   - m_ConditionMode: 2
     m_ConditionEvent: isCrouching
     m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: isSprinting
-    m_EventTreshold: 0
   - m_ConditionMode: 6
     m_ConditionEvent: NESW
     m_EventTreshold: 4
@@ -1252,9 +1246,6 @@ AnimatorStateTransition:
   - m_ConditionMode: 2
     m_ConditionEvent: isCrouching
     m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: isSprinting
-    m_EventTreshold: 0
   - m_ConditionMode: 6
     m_ConditionEvent: NESW
     m_EventTreshold: 1
@@ -1413,9 +1404,6 @@ AnimatorStateTransition:
   m_Conditions:
   - m_ConditionMode: 2
     m_ConditionEvent: isCrouching
-    m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: isSprinting
     m_EventTreshold: 0
   - m_ConditionMode: 6
     m_ConditionEvent: NESW
