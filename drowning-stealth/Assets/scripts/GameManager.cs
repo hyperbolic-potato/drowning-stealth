@@ -35,9 +35,11 @@ public class GameManager : MonoBehaviour
         if (inv != null)
         {
             if (inv.pockets[0] != null) slot1.sprite = inv.pockets[0].GetComponent<SpriteRenderer>().sprite;
+            else slot1.sprite = defaultIcon;
             if (inv.pockets[1] != null) slot2.sprite = inv.pockets[1].GetComponent<SpriteRenderer>().sprite;
+            else slot2.sprite = defaultIcon;
 
-            if(inv.selectedItem == 0) indicator.localPosition = new Vector2(-32, 45);
+            if (inv.selectedItem == 0) indicator.localPosition = new Vector2(-32, 45);
             if(inv.selectedItem == 1) indicator.localPosition = new Vector2(32, 45);
             
         }

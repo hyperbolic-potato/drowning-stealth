@@ -106,7 +106,7 @@ RectTransform:
   m_GameObject: {fileID: 1442563858740568317}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 9000092090085497798}
@@ -181,14 +181,14 @@ RectTransform:
   m_GameObject: {fileID: 1758884249739043672}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 9000092090085497798}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -30, y: 0}
+  m_AnchoredPosition: {x: -32, y: 0}
   m_SizeDelta: {x: 64, y: 64}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7219625402168610736
@@ -1481,7 +1481,7 @@ MonoBehaviour:
   inv: {fileID: 0}
   slot1: {fileID: 1223800235069715373}
   slot2: {fileID: 8477183543988740346}
-  defaultIcon: {fileID: 0}
+  defaultIcon: {fileID: 2081652964, guid: 0a1362bb2c141f5479de2f6662b22f02, type: 3}
 --- !u!1 &9038280804165468449
 GameObject:
   m_ObjectHideFlags: 0

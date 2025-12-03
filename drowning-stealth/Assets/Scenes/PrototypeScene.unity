@@ -8090,23 +8090,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1519346403543831001, guid: cc58adb1826578e44a69af59936903f7, type: 3}
       propertyPath: orthographic size
-      value: 4
+      value: 4.5
       objectReference: {fileID: 0}
     - target: {fileID: 1519346403543831001, guid: cc58adb1826578e44a69af59936903f7, type: 3}
       propertyPath: m_NormalizedViewPortRect.x
-      value: 0.18697068
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1519346403543831001, guid: cc58adb1826578e44a69af59936903f7, type: 3}
       propertyPath: m_NormalizedViewPortRect.y
-      value: 0.18079801
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1519346403543831001, guid: cc58adb1826578e44a69af59936903f7, type: 3}
       propertyPath: m_NormalizedViewPortRect.width
-      value: 0.62540716
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1519346403543831001, guid: cc58adb1826578e44a69af59936903f7, type: 3}
       propertyPath: m_NormalizedViewPortRect.height
-      value: 0.638404
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2550462960674305302, guid: cc58adb1826578e44a69af59936903f7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8596,11 +8596,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3152345837649362427, guid: 855a989c35f1a4c46a589b6d589000d0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 11.67
+      value: 0.09
       objectReference: {fileID: 0}
     - target: {fileID: 3152345837649362427, guid: 855a989c35f1a4c46a589b6d589000d0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 26.55
+      value: 8.21
       objectReference: {fileID: 0}
     - target: {fileID: 3152345837649362427, guid: 855a989c35f1a4c46a589b6d589000d0, type: 3}
       propertyPath: m_LocalPosition.z
