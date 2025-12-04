@@ -92,6 +92,19 @@ public class EnemyNavigation : MonoBehaviour
         
     }
 
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Sinkhole"))
+        {
+            agent.enabled = false;
+            eye.enabled = false;
+            alertness.enabled = false;
+            Destroy(transform.GetChild(0).gameObject);
+            this.enabled = false;
+            collision.enabled = false;
+        }
+    }
+
     IEnumerator Patrol()
     {
         

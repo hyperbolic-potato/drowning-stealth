@@ -26,8 +26,11 @@ public class Alertness : MonoBehaviour
         }
         else
         {
+
             alertLevel = 0;
+            
         }
+
 
         if (alertLevel == 2)
         {
@@ -59,5 +62,14 @@ public class Alertness : MonoBehaviour
     public void TriggerStun()
     {
         alertLevel = -1;
+        attentionSpan = stunTimer;
+    }
+
+    public void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.CompareTag("Item"))
+        {
+            TriggerStun();
+        }
     }
 }
