@@ -15,10 +15,9 @@ public class Tentacle : MonoBehaviour
     void Update()
     {
         lr.SetPosition(1, transform.position);
-        lr.SetPosition(0, end.position - (end.position.normalized));
+        lr.SetPosition(0, end.position + (transform.position - end.position).normalized);
 
         Quaternion rotation = Quaternion.AngleAxis(-(Vector3.SignedAngle(transform.position - end.position, Vector3.up, Vector3.forward) - 180), Vector3.forward);
-        Debug.Log(Vector3.Angle(transform.position - end.position, Vector3.up));
         end.rotation = rotation;
     }
 }

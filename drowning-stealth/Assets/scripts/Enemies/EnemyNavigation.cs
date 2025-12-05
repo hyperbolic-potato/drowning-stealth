@@ -101,7 +101,7 @@ public class EnemyNavigation : MonoBehaviour
             alertness.enabled = false;
             Destroy(transform.GetChild(0).gameObject);
             this.enabled = false;
-            collision.enabled = false;
+            collision.isTrigger = false;
         }
     }
 

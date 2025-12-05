@@ -149,7 +149,7 @@ public class PlayerMovement : MonoBehaviour
             isMoving = false;
             escapeProgress = 0;
 
-            collision.enabled = false;
+            collision.isTrigger = false;
         }
     }
 
