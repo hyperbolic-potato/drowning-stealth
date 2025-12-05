@@ -224,7 +224,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e17634089b65d8488a71e0ce77d6f70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  patrolPoints: []
+  patrolPoints:
+  - {fileID: 0}
   patrolInterval: 0.5
   patrolSpeed: 1.5
   chaseSpeed: 6
@@ -246,7 +247,7 @@ MonoBehaviour:
   orientation: {x: 0, y: -1}
   angle: 45
   count: 8
-  distance: 5
+  distance: 4.5
   debug: 1
 --- !u!114 &6205286669568585529
 MonoBehaviour:
