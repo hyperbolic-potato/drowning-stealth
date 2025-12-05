@@ -15,8 +15,9 @@ public class AlertIndicator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (alertness.alertLevel == 2)      tmp.text = "!!!";
-        else if (alertness.alertLevel == 1) tmp.text = "???";
-        else                                tmp.text = "...";
+        if (alertness.alertLevel == 2)          tmp.text = "!!!";
+        else if (alertness.alertLevel == 1)     tmp.text = "???";
+        else if (alertness.alertLevel == -1)    tmp.text = "STUNNED!";
+        else                                    tmp.text = "...";
     }
 }
