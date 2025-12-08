@@ -5,10 +5,14 @@ public class Tentacle : MonoBehaviour
     LineRenderer lr;
     Transform end;
     Vector2 endPosition;
+    Rigidbody2D rb;
     void Start()
     {
         lr = GetComponent<LineRenderer>();
+        
         end = transform.GetChild(0);
+
+        rb = end.GetComponent<Rigidbody2D>();
     }
 
 
@@ -19,5 +23,6 @@ public class Tentacle : MonoBehaviour
 
         Quaternion rotation = Quaternion.AngleAxis(-(Vector3.SignedAngle(transform.position - end.position, Vector3.up, Vector3.forward) - 180), Vector3.forward);
         end.rotation = rotation;
+
     }
 }
