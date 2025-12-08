@@ -28,7 +28,7 @@ public class TentacleAttack : MonoBehaviour
 
         tentacle.SetActive(true);
         tentacle.transform.position = transform.position;
-        tentacle.transform.GetChild(0).position = transform.position;
+        tentacle.transform.GetChild(0).position = transform.position + (Vector3)direction.normalized;
         tentacle.transform.GetChild(0).GetComponent<Rigidbody2D>().linearVelocity = direction * speed;
     }
 
