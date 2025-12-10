@@ -2388,9 +2388,10 @@ GameObject:
   - component: {fileID: 282363843}
   - component: {fileID: 282363845}
   - component: {fileID: 282363844}
+  - component: {fileID: 282363846}
   m_Layer: 7
   m_Name: DestructiblePillar (1)
-  m_TagString: Untagged
+  m_TagString: Destructable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2511,6 +2512,33 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!50 &282363846
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 282363842}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!4 &334452811 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 640200925502697850, guid: b71566032a2261049a7e8cb576f1d76e, type: 3}
@@ -3813,9 +3841,10 @@ GameObject:
   - component: {fileID: 1438839801}
   - component: {fileID: 1438839803}
   - component: {fileID: 1438839802}
+  - component: {fileID: 1438839804}
   m_Layer: 7
   m_Name: DestructiblePillar
-  m_TagString: Untagged
+  m_TagString: Destructable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3936,6 +3965,33 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!50 &1438839804
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1438839800}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!4 &1453003130 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 640200925502697850, guid: b71566032a2261049a7e8cb576f1d76e, type: 3}
@@ -4190,6 +4246,7 @@ GameObject:
   - component: {fileID: 1807537008}
   - component: {fileID: 1807537010}
   - component: {fileID: 1807537009}
+  - component: {fileID: 1807537011}
   m_Layer: 0
   m_Name: OctoBossFace
   m_TagString: Enemy
@@ -4330,6 +4387,20 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 1
+--- !u!114 &1807537011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1807537006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a518355a923c0cc42a92d7b9b70c0c57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  throwable: {fileID: 3048355144966762565, guid: f7aa53d5513cd9d45a7b03bab3d26040, type: 3}
+  stunned: 0
 --- !u!1 &1821780072
 GameObject:
   m_ObjectHideFlags: 0
