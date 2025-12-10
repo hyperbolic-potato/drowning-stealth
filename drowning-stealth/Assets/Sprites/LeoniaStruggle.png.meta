@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 93a3108a1a0239741bc89467403278dc
+guid: 6607b1e30b1fb964185da4f832dc7c3f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,7 +97,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: LeoniaStuckSpritesheet_0
+      name: LeoniaStruggle_0
       rect:
         serializedVersion: 2
         x: 0
@@ -112,36 +112,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f81bd32a69da3da47ad1c3fac89bdc11
-      internalID: -1307110286
+      spriteID: e2b2793a188bfdd4bae2e0bca71dbbc3
+      internalID: -1189616710
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LeoniaStuckSpritesheet_1
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 361201d62d78f9e40a115b9b349719c4
-      internalID: -2140666498
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: LeoniaStuckSpritesheet_2
+      name: LeoniaStruggle_1
       rect:
         serializedVersion: 2
         x: 0
@@ -156,30 +134,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 77d741ee0678ca64e920c942402d7d3a
-      internalID: 1498320825
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: LeoniaStuckSpritesheet_3
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 390922fedb94ca4438c0506c5423ad6b
-      internalID: 615571080
+      spriteID: 96b0f74d1693f1845bb565bcd154a147
+      internalID: -1702268480
       vertices: []
       indices: 
       edges: []
@@ -188,7 +144,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 8aad1e6d54e2bb14c93878ec563b46a1
+    spriteID: 7dfe1dba000e6614e9e89a4f1d0665f9
     internalID: 0
     vertices: []
     indices: 
@@ -200,10 +156,8 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      LeoniaStuckSpritesheet_0: -1307110286
-      LeoniaStuckSpritesheet_1: -2140666498
-      LeoniaStuckSpritesheet_2: 1498320825
-      LeoniaStuckSpritesheet_3: 615571080
+      LeoniaStruggle_0: -1189616710
+      LeoniaStruggle_1: -1702268480
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
