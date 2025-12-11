@@ -14,7 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/AmbulanceScene.unity
     guid: 843a6b73e1c17d64790f5bc9402d0720
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/HospitalScene.unity
     guid: 52ce094e340009f41b961b808c4ffb60
   - enabled: 1
