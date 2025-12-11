@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 6729488746669059113}
   - component: {fileID: 1189689929433272669}
   - component: {fileID: 5046620402287545736}
+  - component: {fileID: 6675126832875935298}
   m_Layer: 0
   m_Name: TentacleMonster
   m_TagString: Enemy
@@ -227,6 +228,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &6675126832875935298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6463392265963838955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b83e33fcdf56a64f89deb3641678ed9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  alertness: {fileID: 0}
+  isAlert: 1
 --- !u!1001 &2186025889708344425
 PrefabInstance:
   m_ObjectHideFlags: 0
