@@ -120,7 +120,7 @@ public class EnemyNavigation : MonoBehaviour
             float distance = 1f;
             do
             {
-                agent.SetDestination(patrolPoints[i].position); 
+                if(agent.enabled) agent.SetDestination(patrolPoints[i].position); 
 
                 distance = (
                             new Vector2(patrolPoints[i].position.x, patrolPoints[i].position.y) -
