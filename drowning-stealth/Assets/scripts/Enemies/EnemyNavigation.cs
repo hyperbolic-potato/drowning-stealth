@@ -26,6 +26,8 @@ public class EnemyNavigation : MonoBehaviour
 
     Animator anim;
 
+
+
     private void Start()
     {
         agent = GetComponent<NavMeshAgent>();
@@ -101,7 +103,8 @@ public class EnemyNavigation : MonoBehaviour
             alertness.enabled = false;
             Destroy(transform.GetChild(0).gameObject);
             this.enabled = false;
-            collision.isTrigger = false;
+            collision.GetComponent<Sinkhole>().Sink();
+            anim.SetBool("isTrapped", true);
         }
     }
 

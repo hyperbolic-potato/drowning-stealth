@@ -3,6 +3,7 @@ using UnityEngine.InputSystem;
 using System.Collections;
 using UnityEngine.UI;
 
+
 public class PlayerMovement : MonoBehaviour
 {
 
@@ -26,6 +27,7 @@ public class PlayerMovement : MonoBehaviour
     public int escapeThreshold;
     public int escapeProgress;
     public SpriteRenderer escapeIndicator;
+    public GameObject escapePrompt;
 
     public float moveNoise = 1.5f;
     public float crawlNoise = 0.75f;
@@ -34,7 +36,7 @@ public class PlayerMovement : MonoBehaviour
 
     public float noise;
 
-    public int nesw = 0;
+    int nesw = 0;
 
     void Start()
     {
@@ -43,12 +45,17 @@ public class PlayerMovement : MonoBehaviour
         anim = GetComponent<Animator>();
 
         escapeIndicator = transform.GetChild(2).GetComponent<SpriteRenderer>();
+        escapePrompt = transform.GetChild(3).gameObject;
+        escapePrompt.SetActive(false);
+
     }
 
     void Update()
     {
+        escapePrompt.SetActive(isTrapped);
         if (isTrapped)
         {
+            
             if (escapeProgress >= escapeThreshold)
             {
                 isTrapped = false;
@@ -149,7 +156,7 @@ public class PlayerMovement : MonoBehaviour
             isMoving = false;
             escapeProgress = 0;
 
-            collision.isTrigger = false;
+            collision.GetComponent<Sinkhole>().Sink();
         }
     }
 

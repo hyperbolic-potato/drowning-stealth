@@ -47,6 +47,7 @@ public class PlayerCaught : MonoBehaviour
             inventory.Clear();
             transform.position = respawnPosition;
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            manager = GameObject.FindWithTag("GameController").GetComponent<GameManager>();
         }
     }
 }

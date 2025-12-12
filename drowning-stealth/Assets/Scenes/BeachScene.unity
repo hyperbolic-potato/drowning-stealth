@@ -45654,6 +45654,12 @@ MonoBehaviour:
   - tile: {fileID: 11400000, guid: 33decd43d0e974c42977a78fb511073c, type: 2}
     overrideArea: 1
     area: 1
+  - tile: {fileID: 11400000, guid: 01d40840371cda64a835d988d784d149, type: 2}
+    overrideArea: 1
+    area: 1
+  - tile: {fileID: 11400000, guid: 6767a27959249c648bfec0d252a2a317, type: 2}
+    overrideArea: 1
+    area: 1
 --- !u!114 &91984577
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -64131,19 +64137,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1519346403543831001, guid: cc58adb1826578e44a69af59936903f7, type: 3}
       propertyPath: m_NormalizedViewPortRect.x
-      value: 0.1463078
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1519346403543831001, guid: cc58adb1826578e44a69af59936903f7, type: 3}
       propertyPath: m_NormalizedViewPortRect.y
-      value: 0.15133172
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1519346403543831001, guid: cc58adb1826578e44a69af59936903f7, type: 3}
       propertyPath: m_NormalizedViewPortRect.width
-      value: 0.70669425
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1519346403543831001, guid: cc58adb1826578e44a69af59936903f7, type: 3}
       propertyPath: m_NormalizedViewPortRect.height
-      value: 0.6973366
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2550462960674305302, guid: cc58adb1826578e44a69af59936903f7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -64192,7 +64198,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6919686690749563058, guid: cc58adb1826578e44a69af59936903f7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: cc58adb1826578e44a69af59936903f7, type: 3}
 --- !u!1 &2093256392
 GameObject:
