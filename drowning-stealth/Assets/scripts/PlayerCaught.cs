@@ -41,9 +41,11 @@ public class PlayerCaught : MonoBehaviour
         }
         if (collision.CompareTag("Finish"))
         {
+            manager = GameObject.FindWithTag("GameController").GetComponent<GameManager>();
             inventory.Clear();
             transform.parent = manager.transform;
             doorsOpened = null;
+            
             manager.LoadNextLevel();
         }
     }

@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class Sinkhole : MonoBehaviour
 {
@@ -16,5 +17,6 @@ public class Sinkhole : MonoBehaviour
     {
         col.isTrigger = false;
         sr.sprite = sunkHole;
+        sr.color = Color.white;
     }
 }

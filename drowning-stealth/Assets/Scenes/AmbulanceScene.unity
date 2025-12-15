@@ -15901,7 +15901,7 @@ Tilemap:
   - m_RefCount: 0
     m_Data: {fileID: 0}
   m_AnimationFrameRate: 1
-  m_Color: {r: 0.36078432, g: 0.33333334, b: 0.4039216, a: 1}
+  m_Color: {r: 0.6289307, g: 0.52015334, b: 0.52015334, a: 1}
   m_Origin: {x: -27, y: -11, z: 0}
   m_Size: {x: 112, y: 65, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
@@ -20009,7 +20009,7 @@ Tilemap:
   - m_RefCount: 0
     m_Data: {fileID: 0}
   m_AnimationFrameRate: 1
-  m_Color: {r: 0.36126083, g: 0.33289814, b: 0.40251565, a: 1}
+  m_Color: {r: 0.6289307, g: 0.52015334, b: 0.52015334, a: 1}
   m_Origin: {x: -27, y: -11, z: 0}
   m_Size: {x: 93, y: 51, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
@@ -20390,19 +20390,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1519346403543831001, guid: cc58adb1826578e44a69af59936903f7, type: 3}
       propertyPath: m_NormalizedViewPortRect.x
-      value: 0.06298003
+      value: 0.10697032
       objectReference: {fileID: 0}
     - target: {fileID: 1519346403543831001, guid: cc58adb1826578e44a69af59936903f7, type: 3}
       propertyPath: m_NormalizedViewPortRect.y
-      value: 0.06284153
+      value: 0.10674847
       objectReference: {fileID: 0}
     - target: {fileID: 1519346403543831001, guid: cc58adb1826578e44a69af59936903f7, type: 3}
       propertyPath: m_NormalizedViewPortRect.width
-      value: 0.87403995
+      value: 0.7853692
       objectReference: {fileID: 0}
     - target: {fileID: 1519346403543831001, guid: cc58adb1826578e44a69af59936903f7, type: 3}
       propertyPath: m_NormalizedViewPortRect.height
-      value: 0.87431693
+      value: 0.78527606
       objectReference: {fileID: 0}
     - target: {fileID: 2550462960674305302, guid: cc58adb1826578e44a69af59936903f7, type: 3}
       propertyPath: m_LocalPosition.x

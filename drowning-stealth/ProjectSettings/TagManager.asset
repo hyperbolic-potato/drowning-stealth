@@ -12,6 +12,7 @@ TagManager:
   - Checkpoint
   - Sinkhole
   - Destructable
+  - Doors
   layers:
   - Default
   - TransparentFX

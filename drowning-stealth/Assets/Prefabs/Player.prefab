@@ -120,7 +120,7 @@ Transform:
   m_GameObject: {fileID: 886044789083044197}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.469, z: 0}
+  m_LocalPosition: {x: 0, y: -0.469, z: -2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -482,6 +482,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   respawnPosition: {x: 0, y: 0}
+  doorsOpened: 
 --- !u!95 &484008507987972907
 Animator:
   serializedVersion: 7

@@ -258,6 +258,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 145008220031236063, guid: 64f8cc99e46841e44847eaaf9fb6722a, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 271353765023076880, guid: 64f8cc99e46841e44847eaaf9fb6722a, type: 3}
       propertyPath: id
       value: 1
@@ -266,6 +270,10 @@ PrefabInstance:
       propertyPath: icon
       value: 
       objectReference: {fileID: 416392837, guid: fd5bf01b61d94a84881ef94630b0f5bd, type: 3}
+    - target: {fileID: 1119868595361497430, guid: 64f8cc99e46841e44847eaaf9fb6722a, type: 3}
+      propertyPath: m_TagString
+      value: Item
+      objectReference: {fileID: 0}
     - target: {fileID: 1791810048268301752, guid: 64f8cc99e46841e44847eaaf9fb6722a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -26.626
@@ -309,6 +317,10 @@ PrefabInstance:
     - target: {fileID: 4309577022702561596, guid: 64f8cc99e46841e44847eaaf9fb6722a, type: 3}
       propertyPath: m_Color.r
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5997358110883247898, guid: 64f8cc99e46841e44847eaaf9fb6722a, type: 3}
+      propertyPath: m_TagString
+      value: Doors
       objectReference: {fileID: 0}
     - target: {fileID: 6391519992508259028, guid: 64f8cc99e46841e44847eaaf9fb6722a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -114504,6 +114516,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 145008220031236063, guid: 64f8cc99e46841e44847eaaf9fb6722a, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 271353765023076880, guid: 64f8cc99e46841e44847eaaf9fb6722a, type: 3}
       propertyPath: id
       value: 3
@@ -114512,6 +114528,10 @@ PrefabInstance:
       propertyPath: icon
       value: 
       objectReference: {fileID: -1815246884, guid: fd5bf01b61d94a84881ef94630b0f5bd, type: 3}
+    - target: {fileID: 1119868595361497430, guid: 64f8cc99e46841e44847eaaf9fb6722a, type: 3}
+      propertyPath: m_TagString
+      value: Item
+      objectReference: {fileID: 0}
     - target: {fileID: 1791810048268301752, guid: 64f8cc99e46841e44847eaaf9fb6722a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 29.374
@@ -114555,6 +114575,10 @@ PrefabInstance:
     - target: {fileID: 4309577022702561596, guid: 64f8cc99e46841e44847eaaf9fb6722a, type: 3}
       propertyPath: m_Color.r
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5997358110883247898, guid: 64f8cc99e46841e44847eaaf9fb6722a, type: 3}
+      propertyPath: m_TagString
+      value: Doors
       objectReference: {fileID: 0}
     - target: {fileID: 6391519992508259028, guid: 64f8cc99e46841e44847eaaf9fb6722a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -114707,6 +114731,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 145008220031236063, guid: 64f8cc99e46841e44847eaaf9fb6722a, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 271353765023076880, guid: 64f8cc99e46841e44847eaaf9fb6722a, type: 3}
       propertyPath: id
       value: 4
@@ -114715,6 +114743,10 @@ PrefabInstance:
       propertyPath: icon
       value: 
       objectReference: {fileID: -1508767578, guid: fd5bf01b61d94a84881ef94630b0f5bd, type: 3}
+    - target: {fileID: 1119868595361497430, guid: 64f8cc99e46841e44847eaaf9fb6722a, type: 3}
+      propertyPath: m_TagString
+      value: Item
+      objectReference: {fileID: 0}
     - target: {fileID: 1791810048268301752, guid: 64f8cc99e46841e44847eaaf9fb6722a, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -114770,6 +114802,10 @@ PrefabInstance:
     - target: {fileID: 5997358110883247898, guid: 64f8cc99e46841e44847eaaf9fb6722a, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5997358110883247898, guid: 64f8cc99e46841e44847eaaf9fb6722a, type: 3}
+      propertyPath: m_TagString
+      value: Doors
       objectReference: {fileID: 0}
     - target: {fileID: 6391519992508259028, guid: 64f8cc99e46841e44847eaaf9fb6722a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -115726,7 +115762,7 @@ Transform:
   m_GameObject: {fileID: 1154229566}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -0.5000001, y: 38.5, z: 0}
+  m_LocalPosition: {x: -0.5000002, y: 39, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -116203,6 +116239,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 145008220031236063, guid: 64f8cc99e46841e44847eaaf9fb6722a, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 271353765023076880, guid: 64f8cc99e46841e44847eaaf9fb6722a, type: 3}
       propertyPath: id
       value: 2
@@ -116211,6 +116251,10 @@ PrefabInstance:
       propertyPath: icon
       value: 
       objectReference: {fileID: 552226830, guid: fd5bf01b61d94a84881ef94630b0f5bd, type: 3}
+    - target: {fileID: 1119868595361497430, guid: 64f8cc99e46841e44847eaaf9fb6722a, type: 3}
+      propertyPath: m_TagString
+      value: Item
+      objectReference: {fileID: 0}
     - target: {fileID: 1791810048268301752, guid: 64f8cc99e46841e44847eaaf9fb6722a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -12.125999
@@ -116254,6 +116298,10 @@ PrefabInstance:
     - target: {fileID: 4309577022702561596, guid: 64f8cc99e46841e44847eaaf9fb6722a, type: 3}
       propertyPath: m_Color.r
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5997358110883247898, guid: 64f8cc99e46841e44847eaaf9fb6722a, type: 3}
+      propertyPath: m_TagString
+      value: Doors
       objectReference: {fileID: 0}
     - target: {fileID: 6391519992508259028, guid: 64f8cc99e46841e44847eaaf9fb6722a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -117387,7 +117435,7 @@ MonoBehaviour:
   m_OverrideTileSize: 0
   m_TileSize: 256
   m_OverrideVoxelSize: 0
-  m_VoxelSize: 0.11666667
+  m_VoxelSize: 0.06666667
   m_BuildHeightMesh: 0
   m_MinRegionArea: 0
   m_HideEditorLogs: 0
@@ -118467,7 +118515,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6919686690749563058, guid: cc58adb1826578e44a69af59936903f7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: cc58adb1826578e44a69af59936903f7, type: 3}
 --- !u!4 &2080270923 stripped
 Transform:
