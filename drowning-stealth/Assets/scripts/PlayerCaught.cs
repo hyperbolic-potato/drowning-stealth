@@ -1,5 +1,8 @@
+using NUnit.Framework;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Collections.Generic;
 
 public class PlayerCaught : MonoBehaviour
 {
@@ -7,6 +10,7 @@ public class PlayerCaught : MonoBehaviour
 
     GameManager manager;
     Inventory inventory;
+    public List<int> doorsOpened;
 
     void Awake()
     {
@@ -16,6 +20,9 @@ public class PlayerCaught : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+        
+
     }
 
     private void Start()
@@ -36,6 +43,7 @@ public class PlayerCaught : MonoBehaviour
         {
             inventory.Clear();
             transform.parent = manager.transform;
+            doorsOpened = null;
             manager.LoadNextLevel();
         }
     }
@@ -48,6 +56,15 @@ public class PlayerCaught : MonoBehaviour
             transform.position = respawnPosition;
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             manager = GameObject.FindWithTag("GameController").GetComponent<GameManager>();
+
+            /*
+            GameObject[] doors = GameObject.FindGameObjectsWithTag("Doors");
+            //for once, shallow copy works in our favor
+            foreach(GameObject door in doors)
+            {
+                
+            }
+            */
         }
     }
 }

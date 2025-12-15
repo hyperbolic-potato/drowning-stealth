@@ -9,6 +9,7 @@ public class Inventory : MonoBehaviour
     public GameObject interactable;
     public int capacity = 5;
 
+
     
 
     private void Start()
