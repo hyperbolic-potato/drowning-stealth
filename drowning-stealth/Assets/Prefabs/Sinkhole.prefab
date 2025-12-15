@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3946354844332955734}
   - component: {fileID: 1022739692532344772}
   - component: {fileID: 7710375937181454110}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Sinkhole
   m_TagString: Sinkhole
   m_Icon: {fileID: 0}
