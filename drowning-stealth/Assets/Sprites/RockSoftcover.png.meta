@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 78e6a2261d84e6f4eb60be1c6ced2f30
+guid: 9cb9ac861d8f4474aa7ba0d70beb9f14
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,7 +97,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Rolling Stool_0
+      name: RockSoftcover_0
       rect:
         serializedVersion: 2
         x: 0
@@ -112,8 +112,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6bbce8705add99b4fbfb1448411860ee
-      internalID: 1773833076
+      spriteID: 4de1336aa92e180468047511b34b0f52
+      internalID: -1707886469
       vertices: []
       indices: 
       edges: []
@@ -122,7 +122,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: d074aac10ccfe0a48bbb363b92f394da
+    spriteID: 865a6dfe624f626448a8817b220a14df
     internalID: 0
     vertices: []
     indices: 
@@ -134,7 +134,7 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Rolling Stool_0: 1773833076
+      RockSoftcover_0: -1707886469
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
