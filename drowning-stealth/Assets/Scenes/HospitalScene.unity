@@ -118454,19 +118454,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1519346403543831001, guid: cc58adb1826578e44a69af59936903f7, type: 3}
       propertyPath: m_NormalizedViewPortRect.x
-      value: 0
+      value: 0.10697032
       objectReference: {fileID: 0}
     - target: {fileID: 1519346403543831001, guid: cc58adb1826578e44a69af59936903f7, type: 3}
       propertyPath: m_NormalizedViewPortRect.y
-      value: 0
+      value: 0.10674847
       objectReference: {fileID: 0}
     - target: {fileID: 1519346403543831001, guid: cc58adb1826578e44a69af59936903f7, type: 3}
       propertyPath: m_NormalizedViewPortRect.width
-      value: 1
+      value: 0.7853692
       objectReference: {fileID: 0}
     - target: {fileID: 1519346403543831001, guid: cc58adb1826578e44a69af59936903f7, type: 3}
       propertyPath: m_NormalizedViewPortRect.height
-      value: 1
+      value: 0.78527606
       objectReference: {fileID: 0}
     - target: {fileID: 2550462960674305302, guid: cc58adb1826578e44a69af59936903f7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -118955,7 +118955,7 @@ PrefabInstance:
       objectReference: {fileID: 262832773}
     - target: {fileID: 1114751847743637727, guid: b32c72e267401d047b0fef7d82a00181, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3476427907367242521, guid: b32c72e267401d047b0fef7d82a00181, type: 3}
       propertyPath: player
