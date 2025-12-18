@@ -113,10 +113,12 @@ public class PlayerMovement : MonoBehaviour
 
             
         }
+
         anim.SetBool("isMoving", isMoving);
         anim.SetBool("isCrouching", isCrawling);
         anim.SetBool("isSprinting", isSprinting);
         anim.SetInteger("NESW", nesw);
+        anim.SetBool("isTrapped", isTrapped);
 
 
     }

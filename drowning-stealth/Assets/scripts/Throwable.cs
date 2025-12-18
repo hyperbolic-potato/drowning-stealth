@@ -21,18 +21,22 @@ public class Throwable : Item
 
     public GameObject manager;
 
+    public Inventory inv;
+
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         col = GetComponent<Collider2D>();
         sfx = GetComponent<AudioSource>();
         manager = GameObject.FindWithTag("GameController");
+        inv = GameObject.FindWithTag("Player").GetComponent<Inventory>();
     }
 
     public override bool Usage()
     {
         gameObject.SetActive(true);
 
+        inv.isThrowing = true;
         
 
         sfx.clip = sfxList[0];
@@ -56,6 +60,8 @@ public class Throwable : Item
         rb.bodyType = RigidbodyType2D.Dynamic;
         
         rb.linearVelocity = ThrowVector;
+
+        
 
         return true;
     }

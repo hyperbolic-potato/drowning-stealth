@@ -1,6 +1,7 @@
 using System.Linq;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using System.Collections;
 
 public class Inventory : MonoBehaviour
 {
@@ -9,12 +10,32 @@ public class Inventory : MonoBehaviour
     public GameObject interactable;
     public int capacity = 5;
 
+    Animator anim;
+    public bool isThrowing;
+
 
     
 
     private void Start()
     {
         pockets = new GameObject[capacity];
+        anim = GetComponent<Animator>();    
+    }
+
+    private void Update()
+    {
+        anim.SetBool("isThrowing", isThrowing);
+        if (isThrowing)
+        {
+
+            StartCoroutine(ThrowAnim());
+        }
+    }
+
+    IEnumerator ThrowAnim()
+    {
+        yield return new WaitForSeconds(0.65f);
+        isThrowing = false;
     }
     public void Pickup()
     {
