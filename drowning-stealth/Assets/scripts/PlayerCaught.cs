@@ -13,6 +13,10 @@ public class PlayerCaught : MonoBehaviour
     Inventory inventory;
     PlayerMovement movement;
     public List<int> doorsOpened;
+    Collider2D col;
+
+    AudioSource sfx;
+    public AudioClip[] sfxList;
 
     Animator anim;
 
@@ -35,6 +39,8 @@ public class PlayerCaught : MonoBehaviour
         inventory = GetComponent<Inventory>();
         movement = GetComponent<PlayerMovement>();
         anim = GetComponent<Animator>();
+        sfx = GetComponent<AudioSource>();
+        col = GetComponent<Collider2D>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -64,9 +70,13 @@ public class PlayerCaught : MonoBehaviour
 
             inventory.enabled = false;
             movement.enabled = false;
+            col.enabled = false;
             
 
             StartCoroutine(ResetCharacter());
+
+            sfx.clip = sfxList[0];
+            sfx.Play();
             
         }
     }
@@ -82,6 +92,7 @@ public class PlayerCaught : MonoBehaviour
         anim.SetBool("isDead", false);
         inventory.enabled = true;
         movement.enabled = true;
+        col.enabled=true;
 
         /*
             GameObject[] doors = GameObject.FindGameObjectsWithTag("Doors");

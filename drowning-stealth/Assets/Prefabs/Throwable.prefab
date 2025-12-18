@@ -133,8 +133,8 @@ MonoBehaviour:
   icon: {fileID: 1483971033, guid: 0a1362bb2c141f5479de2f6662b22f02, type: 3}
   power: 16
   sfxList:
-  - {fileID: 8300000, guid: bf9700ede6118864e813dfcc0d001281, type: 3}
-  - {fileID: 8300000, guid: 9dbef99071b9695488532cfd44aff151, type: 3}
+  - {fileID: 8300000, guid: 1ff4da6bc38af874fb7130b42f91e1ab, type: 3}
+  - {fileID: 8300000, guid: b2904f6f9ef503a4299ff4034ac7946c, type: 3}
   noise: {fileID: 4442809598132938046, guid: 21ccf7d4e6b006d44a08dbb0fa04386a, type: 3}
   noiseVolume: 7
   interactable:
@@ -144,6 +144,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 72
   manager: {fileID: 0}
+  inv: {fileID: 0}
 --- !u!82 &92101242736015651
 AudioSource:
   m_ObjectHideFlags: 0

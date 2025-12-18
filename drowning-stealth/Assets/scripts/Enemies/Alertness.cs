@@ -14,9 +14,13 @@ public class Alertness : MonoBehaviour
     public Transform player;
     // 0 for idle, 1 for investigating, 2 for chasing, -1 for stunned
 
+    public AudioClip[] sfxlist;
+    AudioSource sfx;
+
     private void Start()
     {
         player = GameObject.FindWithTag("Player").transform;
+        sfx = GetComponent<AudioSource>();
     }
     private void Update()
     {
@@ -43,6 +47,11 @@ public class Alertness : MonoBehaviour
     {
         if (alertLevel < 2 && alertLevel > -1)
         {
+            if(alertLevel != 1)
+            {
+                sfx.clip = sfxlist[0];
+                sfx.Play();
+            }
             alertLevel = 1;
         target = newTarget;
             attentionSpan = attentionSpanMax;
@@ -54,6 +63,12 @@ public class Alertness : MonoBehaviour
     {
         if (alertLevel > -1)
         {
+            if(alertLevel != 2)
+            {
+                sfx.clip = sfxlist[1];
+                sfx.Play();
+            }
+            
             alertLevel = 2;
             attentionSpan = attentionSpanMax;
         }
