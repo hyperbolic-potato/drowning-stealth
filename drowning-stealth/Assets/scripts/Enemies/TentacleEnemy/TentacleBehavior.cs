@@ -14,6 +14,8 @@ public class TentacleBehavior : MonoBehaviour
         alertness = GetComponent<Alertness>();
         anim = GetComponent<Animator>();
         col = GetComponent<Collider2D>();
+
+        anim.SetBool("isAlive", true);
     }
 
     private void Update()
@@ -27,10 +29,13 @@ public class TentacleBehavior : MonoBehaviour
 
 
 
-            anim.SetBool("isAlive", isAlive);
+            
             anim.SetBool("isAlert", isAlert);
+            
         if (!isAlive)
         {
+            anim.SetBool("isAlive", false);
+
             col.enabled = false;
             for (int i = 0; i < transform.childCount; i++)
             {
