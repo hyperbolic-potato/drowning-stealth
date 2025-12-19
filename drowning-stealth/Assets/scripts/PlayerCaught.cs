@@ -14,6 +14,7 @@ public class PlayerCaught : MonoBehaviour
     PlayerMovement movement;
     public List<int> doorsOpened;
     Collider2D col;
+    Rigidbody2D rb;
 
     AudioSource sfx;
     public AudioClip[] sfxList;
@@ -41,6 +42,7 @@ public class PlayerCaught : MonoBehaviour
         anim = GetComponent<Animator>();
         sfx = GetComponent<AudioSource>();
         col = GetComponent<Collider2D>();
+        rb = GetComponent<Rigidbody2D>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -71,7 +73,7 @@ public class PlayerCaught : MonoBehaviour
             inventory.enabled = false;
             movement.enabled = false;
             col.enabled = false;
-            
+            rb.simulated = false;
 
             StartCoroutine(ResetCharacter());
 
@@ -93,6 +95,8 @@ public class PlayerCaught : MonoBehaviour
         inventory.enabled = true;
         movement.enabled = true;
         col.enabled=true;
+        rb.simulated = true;
+
 
         /*
             GameObject[] doors = GameObject.FindGameObjectsWithTag("Doors");
