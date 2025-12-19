@@ -61,6 +61,7 @@ public class PlayerCaught : MonoBehaviour
             doorsOpened = null;
             
             manager.LoadNextLevel();
+            Destroy(gameObject);
         }
     }
 
