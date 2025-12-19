@@ -45,6 +45,14 @@ public class PlayerCaught : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
 
+    private void Update()
+    {
+        if ( SceneManager.GetActiveScene().buildIndex == 0)
+        {
+            Destroy(this.gameObject);
+        }
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
 
@@ -75,6 +83,7 @@ public class PlayerCaught : MonoBehaviour
             movement.enabled = false;
             col.enabled = false;
             rb.simulated = false;
+            movement.isTrapped = false;
 
             StartCoroutine(ResetCharacter());
 

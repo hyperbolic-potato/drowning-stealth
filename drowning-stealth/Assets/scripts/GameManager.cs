@@ -21,7 +21,8 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         pauseMenu = GameObject.FindGameObjectWithTag("PauseMenu");
-        inv = GameObject.FindWithTag("Player").GetComponent<Inventory>();
+        GameObject temp = GameObject.FindWithTag("Player");
+        if (temp != null) inv = temp.GetComponent<Inventory>();
         if(pauseMenu != null) pauseMenu.SetActive(false);
         if (inp == null) Debug.LogError("GameManager is missing her input scheme :( make sure she has one in the editor");
         
@@ -73,6 +74,7 @@ public class GameManager : MonoBehaviour
     public void Restart()
     {
         LoadLevel(SceneManager.GetActiveScene().buildIndex);
+        inv.gameObject.transform.position = transform.position;
     }
 
     public void ReturnToMenu()
